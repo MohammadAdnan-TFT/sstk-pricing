@@ -29,7 +29,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless: false,
+    headless: true,
     // viewport: null,  // Use full screen size
     // launchOptions: {
     //   args: ['--start-maximized'], // Maximize the browser window
