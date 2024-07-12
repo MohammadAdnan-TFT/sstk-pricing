@@ -22,7 +22,6 @@ export async function clickAndVerifyDialog(page: Page, linkSelector: string, dia
   expect(linkElement).not.toBeNull();
 
   if(linkElement){
-    // await linkElement.click();
     await page.locator(linkSelector).first().click();
   }
   

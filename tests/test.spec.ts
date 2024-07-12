@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { locators } from '../utils/selectors/locators';
 import { hoverAndVerifyTooltip, clickAndVerifyDialog, clickAndVerifyNewPage } from '../utils/utils';
 
-test('Licensing', async ({ page }) => {
+test('Hover over elements and validate text and links', async ({ page }) => {
   await page.goto(locators.baseUrl);
 
   await page.evaluate(() => {
